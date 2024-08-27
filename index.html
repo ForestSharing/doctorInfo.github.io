@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医生评价系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>医生评价系统</h1>
+    <form id="reviewForm">
+        <label for="doctorName">医生名称:</label>
+        <input type="text" id="doctorName" required>
+
+        <label for="department">科室:</label>
+        <select id="department">
+            <option value="妇科">妇科</option>
+            <option value="产科">产科</option>
+            <option value="儿科">儿科</option>
+            <!-- 可以添加更多科室 -->
+        </select>
+
+        <label for="reviewText">评价:</label>
+        <textarea id="reviewText" required></textarea>
+
+        <label for="rating">评分:</label>
+        <select id="rating">
+            <option value="1">1星</option>
+            <option value="2">2星</option>
+            <option value="3">3星</option>
+            <option value="4">4星</option>
+            <option value="5">5星</option>
+        </select>
+
+        <button type="submit">提交评价</button>
+    </form>
+
+    <div id="reviews"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
